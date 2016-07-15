@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#aznl_editable_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../../../../js/jquery.json-2.3.min.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+
+<form onsubmit="AznlEditableDialog.insert();return false;" action="#">
+	<p>Configure editable element for newsletter</p>
+	<p><input id="is_editable" name="is_editable" type="checkbox" /> <b>Is element editable?</b></p>
+	<div name="ed_el_div"></div>
+	<div class="mceActionPanel" style="margin-top:20px;">
+		<hr />
+		<input type="button" id="insert" name="insert" value="{#aznl_editable_dlg.set}" onclick="AznlEditableDialog.setAndClose();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

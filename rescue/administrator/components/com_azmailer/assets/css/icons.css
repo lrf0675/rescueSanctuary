@@ -1,0 +1,52 @@
+/**
+ * @package AZMailer component for Joomla! 1.5
+ * @author Adam Jakab
+ * @license GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+**/
+/*ICONS*/
+
+
+/*CUSTOM 16X16 ICONS*/
+.icon-16-on {	background-image: url(../images/16x16/on.png);}
+.icon-16-off {	background-image: url(../images/16x16/off.png);}
+.icon-16-alert {	background-image: url(../images/16x16/alert.png);}
+.icon-16-question {	background-image: url(../images/16x16/question.png);}
+.icon-16-add {	background-image: url(../images/16x16/add.png);}
+.icon-16-remove {	background-image: url(../images/16x16/remove.png);}
+.icon-16-wait {	background-image: url(../images/16x16/worklog.png);}
+.icon-16-done {	background-image: url(../images/16x16/done.png);}
+.icon-16-star {	background-image: url(../images/16x16/star.png);}
+.icon-16-domain { background-image: url(../images/16x16/domain.png);}
+
+
+
+/*TOOLBAR BUTTONS 32X32*/
+.icon-32-home {	background-image: url(../images/32x32/main.png);}
+.icon-32-test {	background-image: url(../images/32x32/test.png);}
+.icon-32-sync {	background-image: url(../images/32x32/sync.png);}
+.icon-32-on {	background-image: url(../images/32x32/on.png);}
+.icon-32-off {	background-image: url(../images/32x32/off.png);}
+.icon-32-reload {	background-image: url(../images/32x32/reload.png);}
+.icon-32-apply {	background-image: url(../images/32x32/tick.png);}
+.icon-32-import {	background-image: url(../images/32x32/import.png);}
+
+
+/*CP BUTTONS 48X48*/
+.icon-48-azmailer {background-image: url(../images/48x48/azmailer.png);}
+.icon-48-newsletter {background-image: url(../images/48x48/newsletter.png);}
+.icon-48-subscribers {background-image: url(../images/48x48/addressbook.png);}
+.icon-48-mailqueue {background-image: url(../images/48x48/queue.png);}
+.icon-48-template {background-image: url(../images/48x48/puzzle.png);}
+.icon-48-location {background-image: url(../images/48x48/world.png);}
+.icon-48-category {background-image: url(../images/48x48/categories.png);}
+.icon-48-paramconfig {background-image: url(../images/48x48/config.png);}
+.icon-48-editor {background-image: url(../images/48x48/editor.png);}
+.icon-48-statistics {background-image: url(../images/48x48/stats.png);}
+
+/*BUTTONS 96X96*/
+
+
+/*Joomla3 - toolbar button icon corrections (while no bootstrap in J!25)*/
+/* iconset: http://www.nonr.nl/jui/index.php/icons */
+#toolbar .icon-back:before{content: "\e204";}
+#toolbar .icon-import:before{content: "\6b";}

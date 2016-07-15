@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5" method="upgrade">
+  <packagename>azmailerpackage</packagename>
+  <name>AZMailerPackage</name>
+  <creationDate>11-Oct-2014</creationDate>
+  <author>Adam Jakab</author>
+  <authorEmail>support@jakabadambalazs.com</authorEmail>
+  <authorUrl>http://devshed.jakabadambalazs.com</authorUrl>
+  <copyright>Copyright (C) Adam Jakab. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.5.3</version>
+  <description>AZMailerPackage containing the main component, the registration module and the needed plugins.</description>
+  <updateservers>
+    <server name="JAB Update Server" type="collection" priority="1">http://devshed.jakabadambalazs.com/updates.xml</server>
+  </updateservers>
+  <files>
+    <file type="plugin" id="azmailer" group="system">plg_system_azmailer_1.5.3__20141011_1049.zip</file>
+    <file type="plugin" id="azmailerusersync" group="user">plg_user_azmailerusersync_1.5.3__20141011_1049.zip</file>
+    <file type="module" id="mod_azmailersubscribe" client="site">mod_site_azmailersubscribe_1.5.3__20141011_1049.zip</file>
+    <file type="component" id="com_azmailer">com_azmailer_1.5.3__20141011_1049.zip</file>
+  </files>
+  <params/>
+  <config/>
+</extension>

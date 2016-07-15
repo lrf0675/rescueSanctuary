@@ -1,0 +1,229 @@
+/**
+ * @package AZMailer
+ * @author Adam Jakab
+ * @license GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+**/
+
+/*-----------------------------------------------------GENERIC---*/
+.clr{clear:both;}
+div.backlink {
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+}
+
+/*-----------------------------------------------------JQUERY-UI STYLES---*/
+.ui-widget-content.halfsize{width:49%;}
+.ui-widget-content.lefty{float:left;}
+.ui-widget-content.righty{float:right;}
+.ui-widget-header{margin:0;border:0 !important}
+h2.ui-widget-header{padding:3px;}
+h3.ui-widget-header{padding:3px;font-size:16px;}
+
+
+/*-----------------------------------------------------CONTROL PANEL---*/
+#cpanel .icon{
+    text-align: center;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 15px;
+}
+#cpanel .icon{
+    background-color: #fff;
+    background-position: -30px;
+    display: block;
+    float: left;
+    height: 97px;
+    width: 108px;
+    color: #565656;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition-property: background-position, -webkit-border-bottom-left-radius, -webkit-box-shadow;
+    -moz-transition-property: background-position, -moz-border-radius-bottomleft, -moz-box-shadow;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+}
+#cpanel div.icon a {
+    background-color: #fff;
+    background-position: -30px;
+    display: block;
+    float: left;
+    height: 97px;
+    width: 108px;
+    color: #565656;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition-property: background-position, -webkit-border-bottom-left-radius, -webkit-box-shadow;
+    -moz-transition-property: background-position, -moz-border-radius-bottomleft, -moz-box-shadow;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+}
+
+#cpanel div.icon a:hover {
+    background-position: 0;
+    -webkit-border-bottom-left-radius: 50% 20px;
+    -moz-border-radius-bottomleft: 50% 20px;
+    border-bottom-left-radius: 50% 20px;
+    -webkit-box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+#cpanel .icon a span {
+    display: block;
+    text-align: center;
+}
+#cpanel .icon a img {
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------Internal Toolbar Menu---*/
+.toolbarMenu {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin-bottom:10px;
+    background-color: #e4e4e4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.toolbarMenu ul.submenu{overflow: hidden;padding:0;margin:0;}
+.toolbarMenu ul.submenu li{float:left; display: block;}
+.toolbarMenu ul.submenu li a{color:#8a8a8a;padding:5px 15px;display:block;}
+.toolbarMenu ul.submenu li a:hover{text-decoration: none; background-color: #dadada;}
+.toolbarMenu ul.submenu li a.active{background-color: #d4d4d4; color:#4a4a4a;}
+
+/*-----------------------------------------------------Listing - Filters---*/
+#filter-bar{height:auto!important;}
+#filter-bar .fltlft{float:left;}
+#filter-bar .fltrt{float:right;}
+/*-----------------------------------------------------LIST OF RECORDS---*/
+table.adminlist {
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #e7e7e7;
+	color: #666;
+}
+
+table.adminlist td,
+table.adminlist th { padding: 4px; }
+
+table.adminlist thead th {
+	text-align: center;
+	background: #F4F4F4;
+	color: #333;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #fff;
+}
+table.adminlist thead th.title { text-align:left; }
+
+
+table.adminlist thead a:hover { text-decoration: none; }
+
+table.adminlist thead th img { vertical-align: middle; }
+
+table.adminlist tbody th { font-weight: bold; }
+
+table.adminlist tbody tr			{ background-color: #fff;  text-align: left; }
+table.adminlist tbody tr.row1 	{ background: #F4F4F4; border-top: 1px solid #fff; }
+
+table.adminlist tbody tr.row0:hover td,
+table.adminlist tbody tr.row1:hover td  { background-color: #F7FCFE ; }
+
+table.adminlist tbody tr td 	   { height: 25px; background: #fff; border: 1px solid #fff; }
+table.adminlist tbody tr.row1 td { background: #F4F4F4; border-top: 1px solid #FFF; }
+
+table.adminlist tfoot tr { text-align: center;  color: #333; }
+table.adminlist tfoot td,
+table.adminlist tfoot th { background-color: #EFEFEF; border-top: 1px solid #999; text-align: right; }
+
+table.adminlist tbody tr.header { background: #b83e0f; color:#ffffff; border-top: 1px solid #fff; }
+table.adminlist tbody tr.header td{ background: #b83e0f; color:#ffffff; border:none; text-align: center; font-size: 16px;}
+
+
+
+/*-----------------------------------------------------EDIT RECORD---*/
+table.adminlist.edittable{}
+fieldset.adminform { border: 1px solid #ccc; margin: 0 10px 10px 10px; background-color:#ffffff;}
+fieldset.adminform legend{color:#0B55C4;font-size:150%;}
+
+form[name=adminForm] input[readonly=readonly]{background-color:#dedede;color:#555555;}
+
+table.adminlist.edittable td { padding: 3px; text-align: left; }
+table.adminlist.edittable td.data_name{font-weight:bold;min-width:200px;}
+table.adminlist.edittable td.data_val{width:80%; font-weight:normal;}
+
+span.jqerror{color:#c00000;line-height: 26px;margin-left:10px;}
+
+
+/*-----------------------------------------------------DISPLAY RECORD---*/
+/*table.adminlist.displaytable{width:49%;}*/
+table.adminlist.displaytable td.data_name{width:40%; font-weight:bold;}
+table.adminlist.displaytable td.data_val{width:60%; font-weight:normal;}
+
+
+/*-----------------------------------------------------MAIL QUEUE MANAGER ---*/
+table.mqstate{width:98%; border-spacing: 0px; margin:10px auto 10px auto;}
+table.mqstate td{width:20%; text-align: center;border-right: 1px solid #aa9d55;color:#aa9d55;}
+table.mqstate td:first-child{border-left: 1px solid #aa9d55;}
+table.mqstate tr.names td{border-bottom: 1px solid #aa9d55; font-size: 14px;font-weight: bold;}
+
+
+table .queueState.enabled{background-color:#169830;color:#ffffff;cursor: pointer;}
+table .queueState.disabled{background-color:#a5151e;color:#ffffff;cursor: pointer;}
+
+
+
+/*CONFIG PANEL*/
+#config-tabs-com_azmailer_configuration + .current{background-color: #f5f5f5;}
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list{}
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li{padding: 3px 0;border-bottom: 1px solid #ababab;}
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li label,
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li input,
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li select,
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li textarea{float:none;}
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list label{/*border-bottom: 1px solid #ababab;*/}
+#config-tabs-com_azmailer_configuration + .current ul.config-option-list li span.spacer label{font-size:16px;background-color: #e5e5e5;}
+
+/*-----------------------------------------------------Popup Dialogues---*/
+.ui-dialog{}
+.ui-dialog .mDialog{}
+
+.ui-dialog .mDialog.newsletter{}
+.ui-dialog .mDialog.newsletter p.text{margin-left:0px;}
+.ui-dialog .mDialog.newsletter input[type=file]{width:570px;}
+
+
+.ui-dialog .mDialog.settings{}
+.ui-dialog .mDialog.settings .content{}
+.ui-dialog .mDialog.settings .content label{display:block;margin-top:6px; font-size:16px;font-weight: bold;}
+.ui-dialog .mDialog.settings .content input{padding:3px 2px; margin:6px 0 0 0;}
+.ui-dialog .mDialog.settings .content p.description{padding:0;margin:10px 5px 0 5px;font-size: 10px; font-style: italic;}
+.ui-dialog .mDialog.settings .msg{margin-top:6px; color:#c00000;min-height:18px; line-height: 18px;}
+
+/*-----------------------------------------------------------------------------------------------------------------NEWSLETTER EDIT*/
+div#NLATTACHMENTS ul.attachments{list-style: none; margin:20px 10px;padding:0;}
+div#NLATTACHMENTS ul.attachments li{border: 1px solid #bababa;margin:5px;}
+div#NLATTACHMENTS ul.attachments li div.fllft{float:left;line-height: 25px;text-align: left;border-right: 1px solid #dedede; padding:0 5px;}
+div#NLATTACHMENTS ul.attachments li div.flrgt{float:right;line-height: 25px;text-align: center;border-left: 1px solid #dedede; padding:0 5px;}
+/*LEFT*/
+div#NLATTACHMENTS ul.attachments li .name{min-width:500px; font-weight: bold;}
+div#NLATTACHMENTS ul.attachments li .size{min-width:150px;}
+div#NLATTACHMENTS ul.attachments li .type{min-width:150px;}
+/*RIGHT*/
+div#NLATTACHMENTS ul.attachments li .button{min-width:20px;}
+div#NLATTACHMENTS ul.attachments li .button a{display:block; height:23px; width:16px; padding:5px 0 0 0;margin:0;}
+div#NLATTACHMENTS ul.attachments li .button a span{margin:0 0 0 2px;padding:0;width:16px;}
+/*behaviour slection radios*/
+h3.behaveSel label{display:inline; margin-right:10px;}
