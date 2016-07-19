@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="1.6" client="site" method="upgrade">
+	<name>Code7 Responsive Slider</name>
+	<author>Tristan Brookes</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Copyright (C) 2012 Tristan Brookes/Code 7</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>tristan@code7.co.uk</authorEmail>
+	<authorURL>http://www.code7.co.uk</authorURL>
+	<version>2.0.6</version>
+	<description>A joomla responsive image slider module. Images currently must have captions in order to display!
+	Remember, if you use a custom URL for a field it will be used instead of the menu item.</description>
+	
+	<files>
+		<filename>mod_reslider.xml</filename>
+		<filename module="mod_reslider">mod_reslider.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="load_jquery" type="radio" default="1" label="Enable jQuery?" description="Turn on or off inlcuded jQuery. Will also call in a noconflict script because we're lovely here at Code7.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="fadeorslide" type="radio" default="0" label="Fade or Slide?" description="Choose whether the slider will fade or slide between slides">
+					<option value="0">Slide</option>
+					<option value="1">Fade</option>
+				</field>
+				<field name="uselinks" type="radio" default="1" label="Use links?" description="Turn on or off ability to link slides">
+					<option value="0">Yes</option>
+					<option value="1">No</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="moreoptions" label="More Slider Options">
+				<field name="directionNav" type="radio" default="0" label="Use directional nav?" description="Turn on or off left/right buttons">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="controlNav" type="radio" default="0" label="Use control nav?" description="Turn on or off underside control blobs">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="keyboardNav" type="radio" default="0" label="Use keyboard nav?" description="Turn on or off left and right arrow control of slider">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="direction" type="radio" default="0" label="Vertical or Horizontal" description="Slider images go veritcally or horizontally">
+					<option value="1">Vertical</option>
+					<option value="0">Horizontal</option>
+				</field>
+				<field name="slidespeed" type="text" default="7000" label="Slide speed in ms" description="Amount of time a slide remains on screen in milliseconds"/>
+				<field name="animatespeed" type="text" default="600" label="Slide animation speed in ms" description="Amount of time a slide transition takes in milliseconds"/>
+				<field name="randomorder" type="radio" default="0" label="Random order?" description="Slider images in random order?">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="images" label="Images">
+				<field name="image1" type="media" directory="stories" label="Image 1"/>
+				<field name="image1alt" type="text" default="" label="Alt tag"/>
+				<field name="image1cap" type="textarea" default="" label="Image 1 caption" description="Caption for first image" filter="raw"/>
+				<field name="image1link" type="menuitem" default="" label="Image 1 link" description="Link for first slide"/>
+				<field name="image1customlink" type="text" default="" label="OR Image 1 Custom Link" description="Custom link for first slide"/>
+				
+				<field type="spacer" name="myspacer" hr="true" />
+				
+				<field name="image2" type="media" directory="stories" label="Image 2"/>
+				<field name="image2alt" type="text" default="" label="Alt tag"/>
+				<field name="image2cap" type="textarea" default="" label="Image 2 caption" description="Caption for second image" filter="raw"/>
+				<field name="image2link" type="menuitem" default="" label="Image 2 link" description="Link for second slide"/>
+				<field name="image2customlink" type="text" default="" label="OR Image 2 Custom Link" description="Custom link for second slide"/>
+				
+				<field type="spacer" name="myspacer2" hr="true" />
+				
+				<field name="image3" type="media" directory="stories" label="Image 3"/>
+				<field name="image3alt" type="text" default="" label="Alt tag"/>
+				<field name="image3cap" type="textarea" default="" label="Image 3 caption" description="Caption for third image" filter="raw"/>
+				<field name="image3link" type="menuitem" default="" label="Image 3 link" description="Link for third slide"/>
+				<field name="image3customlink" type="text" default="" label="OR Image 3 Custom Link" description="Custom link for third slide"/>
+				
+				<field type="spacer" name="myspacer3" hr="true" />
+				
+				<field name="image4" type="media" directory="stories" label="Image 4"/>
+				<field name="image4alt" type="text" default="" label="Alt tag"/>
+				<field name="image4cap" type="textarea" default="" label="Image 4 caption" description="Caption for fourth image" filter="raw"/>
+				<field name="image4link" type="menuitem" default="" label="Image 4 link" description="Link for fourth slide"/>
+				<field name="image4customlink" type="text" default="" label="OR Image 4 Custom Link" description="Custom link for fourth slide"/>
+				
+				<field type="spacer" name="myspacer4" hr="true" />
+				
+				<field name="image5" type="media" directory="stories" label="Image 5"/>
+				<field name="image5alt" type="text" default="" label="Alt tag"/>
+				<field name="image5cap" type="textarea" default="" label="Image 5 caption" description="Caption for fifth image" filter="raw"/>
+				<field name="image5link" type="menuitem" default="" label="Image 5 link" description="Link for fifth slide"/>
+				<field name="image5customlink" type="text" default="" label="OR Image 5 Custom Link" description="Custom link for fifth slide"/>
+				
+				<field type="spacer" name="myspacer5" hr="true" />
+				
+				<field name="image6" type="media" directory="stories" label="Image 6"/>
+				<field name="image6alt" type="text" default="" label="Alt tag"/>
+				<field name="image6cap" type="textarea" default="" label="Image 6 caption" description="Caption for sixth image" filter="raw"/>
+				<field name="image6link" type="menuitem" default="" label="Image 6 link" description="Link for sixth slide"/>
+				<field name="image6customlink" type="text" default="" label="OR Image 6 Custom Link" description="Custom link for sixth slide"/>
+				
+				<field type="spacer" name="myspacer6" hr="true" />
+				
+				<field name="image7" type="media" directory="stories" label="Image 7"/>
+				<field name="image7alt" type="text" default="" label="Alt tag"/>
+				<field name="image7cap" type="textarea" default="" label="Image 7 caption" description="Caption for seventh image" filter="raw"/>
+				<field name="image7link" type="menuitem" default="" label="Image 7 link" description="Link for seventh slide"/>
+				<field name="image7customlink" type="text" default="" label="OR Image 7 Custom Link" description="Custom link for seventh slide"/>
+				
+				<field type="spacer" name="myspacer7" hr="true" />
+				
+				<field name="image8" type="media" directory="stories" label="Image 8"/>
+				<field name="image8alt" type="text" default="" label="Alt tag"/>
+				<field name="image8cap" type="textarea" default="" label="Image 8 caption" description="Caption for eighth image" filter="raw"/>
+				<field name="image8link" type="menuitem" default="" label="Image 8 link" description="Link for eighth slide"/>
+				<field name="image8customlink" type="text" default="" label="OR Image 8 Custom Link" description="Custom link for eigth slide"/>
+				
+				<field type="spacer" name="myspacer8" hr="true" />
+				
+				<field name="image9" type="media" directory="stories" label="Image 9"/>
+				<field name="image9alt" type="text" default="" label="Alt tag"/>
+				<field name="image9cap" type="textarea" default="" label="Image 9 caption" description="Caption for ninth image" filter="raw"/>
+				<field name="image9link" type="menuitem" default="" label="Image 9 link" description="Link for ninth slide"/>
+				<field name="image9customlink" type="text" default="" label="OR Image 9 Custom Link" description="Custom link for ninth slide"/>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL"
+				description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" 
+				label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+				description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

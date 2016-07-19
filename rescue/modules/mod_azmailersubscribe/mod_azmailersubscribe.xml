@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade">
+  <name>AZMailerSubscribe</name>
+  <creationDate>11-Oct-2014</creationDate>
+  <author>Adam Jakab</author>
+  <authorEmail>support@jakabadambalazs.com</authorEmail>
+  <authorUrl>http://support.jakabadambalazs.com</authorUrl>
+  <copyright>Copyright (C) Adam Jakab. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.5.3</version>
+  <description>MOD_AZMAILERSUBSCRIBE_DESCRIPTION</description>
+  <files folder="site">
+    <folder>assets</folder>
+    <folder>install</folder>
+    <folder>language</folder>
+    <folder>tmpl</folder>
+    <filename>index.html</filename>
+    <filename module="mod_azmailersubscribe">mod_azmailersubscribe.php</filename>
+  </files>
+  <params/>
+  <config>
+    <fields name="params">
+            
+            
+        <fieldset name="basic">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            <field name="module_pretext" type="textarea" default="" label="Module introduction text" cols="60" rows="5" description="The text that appares in between the title and the subscription form."/><field name="spacer_deoloc" type="spacer" label="--- Request Location ---" description="Request user to indicate his location"/><field name="request_country" type="radio" default="1" class="btn-group btn-group-yesno" label="Request Country" description="Request user to indicate country">
+                    
+                    
+                <option value="1">JYES</option><option value="0">JNO</option></field><field name="request_region" type="radio" default="0" class="btn-group btn-group-yesno" label="Request Region" description="Request user to indicate region (needs country)">
+                    
+                    
+                <option value="1">JYES</option><option value="0">JNO</option></field><field name="request_province" type="radio" default="0" class="btn-group btn-group-yesno" label="Request Province" description="Request user to indicate province (needs country and region)">
+                    
+                    
+                <option value="1">JYES</option><option value="0">JNO</option></field><field name="spacer_privacy" type="spacer" label="--- Request Privacy ---" description="Request user to accept privacy info/terms."/><field name="request_privacy" type="radio" default="0" class="btn-group btn-group-yesno" label="Request Privacy" description="Request user to accept privacy info/terms.">
+                    
+                    
+                <option value="1">JYES</option><option value="0">JNO</option></field><field name="privacy_article_url" type="text" default="" label="Privacy Page Url" size="60" description="The Url of the page to show to user. Leave it empty for no info."/><field name="spacer_welcome" type="spacer" label="--- Welcome Subscriber ---" description="Give a welcome message to subscriber"/><field name="welcome_page_url" type="text" default="" label="Welcome Page Url" size="60" description="The Url of the page you want to show after successful registration. Leave it empty for no welcome."/><field name="popup_welcome_page" type="radio" default="1" class="btn-group btn-group-yesno" label="Popup Welcome Page" description="Do you want the Welcome Page to be in a popup? Specified page will open in fancyboxed iframe.">
+                    
+                    
+                <option value="1">JYES</option><option value="0">JNO</option></field></fieldset><fieldset name="advanced">
+                
+                
+                
+                
+            <field name="layout" type="modulelayout" default="default" label="Module Layout" description="Select a layout"/><field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" size="40" description="Additional css classes to assign to module."/><field name="load_jquery" type="radio" default="2" class="btn-group" label="Load jQuery" description="Auto is a safe choice here. jQuery library is needed for this module to work. However you might already have it included in your site by the template or by some other module/plugin. Do not load jQuery twice!">
+                    
+                    
+                    
+                <option value="2">Auto</option><option value="1">JYES</option><option value="0">JNO</option></field><field name="load_fancybox" type="radio" default="2" class="btn-group" label="Load jQuery Fancybox" description="Auto is a safe choice here. Load the jQuery Fancybox library. You will need this for fancy popups.">
+                    
+                    
+                    
+                <option value="2">Auto</option><option value="1">JYES</option><option value="0">JNO</option></field></fieldset></fields>
+  </config>
+</extension>

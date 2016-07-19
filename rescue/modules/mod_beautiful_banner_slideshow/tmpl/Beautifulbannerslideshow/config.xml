@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <name>Beautifulbannerslideshow</name>
+  <author>joombig.com</author>
+  <description>beautiful banner slideshow template.</description>
+  <version>1.0</version>
+  <files>
+    <public>
+    </public>
+    <admin></admin>
+  </files>
+  <config>
+    <fieldset name="Basic">
+    </fieldset>
+  </config>
+</style>

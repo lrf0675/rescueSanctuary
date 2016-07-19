@@ -1,0 +1,22 @@
+/**
+ * @package AZMailer subsription module
+ * @author Adam Jakab
+ * @license GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+**/
+
+/*THE MODULE*/
+.mod_azmailersubscribe{}
+
+/*THE MODULE PRE-TEXT*/
+.mod_azmailersubscribe div.pretext{margin-bottom:10px;font-size:12px;line-height:14px;}
+
+/*THE MODULE FORM*/
+.mod_azmailersubscribe form{}
+
+/*THE MODULE FORM ELEMENTS*/
+.mod_azmailersubscribe form input{border:1px solid #dedede;padding:3px;margin:0px;}
+.mod_azmailersubscribe form input.inputbox{width:96%;padding:2%; text-indent:5px; margin-bottom:8px;}
+.mod_azmailersubscribe form select{width:100%;margin-bottom:8px;border:1px solid #dedede;background-color:#ffffff;}
+.mod_azmailersubscribe form input.inputbox_check{margin-right:5px;}
+.mod_azmailersubscribe form input.inputbox_button{width:100%;}
+.mod_azmailersubscribe form .privacytext{font-size:10px;line-height:10px;margin-bottom:8px;}
